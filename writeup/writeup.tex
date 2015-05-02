@@ -1,0 +1,120 @@
+% 
+% Annual Cognitive Science Conference
+% Sample LaTeX Paper -- Proceedings Format
+% 
+
+% Original : Ashwin Ram (ashwin@cc.gatech.edu)       04/01/1994
+% Modified : Johanna Moore (jmoore@cs.pitt.edu)      03/17/1995
+% Modified : David Noelle (noelle@ucsd.edu)          03/15/1996
+% Modified : Pat Langley (langley@cs.stanford.edu)   01/26/1997
+% Latex2e corrections by Ramin Charles Nakisa        01/28/1997 
+% Modified : Tina Eliassi-Rad (eliassi@cs.wisc.edu)  01/31/1998
+% Modified : Trisha Yannuzzi (trisha@ircs.upenn.edu) 12/28/1999 (in process)
+% Modified : Mary Ellen Foster (M.E.Foster@ed.ac.uk) 12/11/2000
+% Modified : Ken Forbus                              01/23/2004
+% Modified : Eli M. Silk (esilk@pitt.edu)            05/24/2005
+% Modified: Niels Taatgen (taatgen@cmu.edu)  10/24/2006
+
+%% Change ``a4paper'' in the following line to ``letterpaper'' if you are
+%% producing a letter-format document.
+
+
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage{cogsci}
+\usepackage{pslatex}
+\usepackage{apacite}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{amssymb}
+%\usepackage{url}
+%\usepackage{hyperref}
+
+
+ 
+\definecolor{Red}{RGB}{255,0,0}
+\newcommand{\red}[1]{\textcolor{Red}{#1}}  
+
+\title{ Title \textit{author order can be changed} }
+ 
+\author{{\large \bf Desmond C. Ong (dco@stanford.edu)} \\
+  Department of Psychology, Stanford University, Stanford CA, USA 
+  \And {\large \bf Carolyn Fu (...)} \\
+  Affiliation
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+abstract
+
+\textbf{Keywords:} 
+keywords
+\end{abstract}
+
+Writing
+
+
+
+
+%%%%
+
+introduction
+
+\section{Section}
+
+words
+
+
+\subsubsection{Participants and Procedures.} 
+
+\subsubsection{Results.} 
+
+\begin{figure}[htb!]
+%\begin{center}\includegraphics[width=1\columnwidth]{images/Expt1results.png}\end{center}
+\caption{ Expt 1 Results. }
+\label{Expt1ResultFig}
+\end{figure}
+
+
+
+\begin{table}
+\scalebox{0.7}{
+\begin{tabular}{l|c|c}
+X & X & X \\
+\hline
+X & \multirow{2}{*}{\checkmark \checkmark} & \multirow{2}{*}{\checkmark}\\
+X & & \\
+\hline
+X & \multirow{2}{*}{\checkmark} & \multirow{2}{*}{\checkmark \checkmark} \\
+X & & \\
+\hline
+X & \multirow{2}{*}{-}  & \multirow{2}{*}{-} \\
+X & &
+\end{tabular}
+}
+\caption{Predictions for Experiment 2. }
+\label{Expt2Predictions}
+\end{table}
+
+
+\section{Discussion}
+
+
+\section{Acknowledgments}
+
+This work was supported in part by an A*STAR National Science Scholarship to DCO and ...
+
+\bibliographystyle{apacite}
+
+\setlength{\bibleftmargin}{.125in}
+\setlength{\bibindent}{-\bibleftmargin}
+
+\bibliography{writeup}
+
+
+\end{document}
